@@ -1,37 +1,30 @@
-# Ask Me
+# E-Commerce App
 
-This is a RESTful API for a questions platform (people ask you, you answer them) built with Node.js, Express.js, and MySQL. 
-The API allows users to ask questions, provide answers, and manage content through a role-based access control system. 
-The project includes user authentication, authorization, input validation, and comprehensive error handling. 
+This is a full-featured e-commerce application built with Express.js and MongoDB. 
+It allows users to browse products, add them to a shopping cart, and make orders. 
 
 ## Features
-- <p align="left"><strong> Authentication & Authorization: </strong> Sign up and login. JWT-based authentication with role-based access control</p>
-- <p align="left"><strong> User Roles: </strong>Users and Admins with different access permissions.</p>
-- <p align="left"><strong> CRUD Operations: </strong>Full CRUD for questions and answers.</p>
-- <p align="left"><strong> Validations: </strong>Input validation for all API requests to ensure data integrity.</p>
-- <p align="left"><strong> Error Handling: </strong>Comprehensive error handling with descriptive messages.</p>
+- <p align="left"><strong> User Authentication: </strong>Secure sign-up, login, and profile management.</p>
+- <p align="left"><strong> Product Management: </strong>Admins can add, update, or delete products..</p>
+- <p align="left"><strong> Shopping Cart: </strong>Users can add products to their cart and manage quantities.</p>
+- <p align="left"><strong> Order Management: </strong>View past orders and order details.</p>
+- <p align="left"><strong> User Authentication: </strong>Secure sign-up, login, and profile management.</p>
 
 ## Technologies Used
-- <p align="left"><strong> Backend: </strong>Express.js, Node.js, RESTful API with JSend.</p>
-- <p align="left"><strong> Database: </strong>MySql, Sequelize.</p>
-- <p align="left"><strong>Authentication: </strong>JSON Web Tokens (JWT).</p>
-- <p align="left"><strong>Validation: </strong>Express Validator.</p>
-
+- <p align="left"><strong> Backend: </strong>Express.js, Node.js.</p>
+- <p align="left"><strong> Database: </strong>MongoDB, Mongoose.</p>
+- <p align="left"><strong>Authentication: </strong>Sessions and Cookies.</p>
+- <p align="left"><strong>Frontend: </strong>EJS.</p>
 
 ## Run
   To run this project locally, follow these steps:
-  
-    git clone https://github.com/Mostafamaag/askme-api
-    cd askme-api
+
+    git clone https://github.com/Mostafamaag/e-commerce-web-app
+    cd e-commerce-app
     npm install
 
   Create a .env file in the root directory and add the following:
-  
-    DATABASE_HOST = 'your-data-base-host'
-    DATABASE_USER = 'data-base-user'
-    DATABASE_PASSWORD = 'data-base-password'
-    DATABASE_DIALECT = 'mysql'
-    PORT = port
-    JWT_SECRET_KEY = 'jwt-secret-key'
 
-
+    MONGO_URI = your-mongodb-connection-string
+    SESSION_KEY = your-session-secret-key
+    SENDGRID_API_KEY = 'end-grid-api'
